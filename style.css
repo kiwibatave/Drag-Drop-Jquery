@@ -1,3 +1,57 @@
 /*******************************
 			  CSS
 *******************************/
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #64973B;
+}
+nav {
+  height: 100px;
+  width: 100%;
+}
+button {
+  height: 50px;
+  width: 200px;
+  margin: 20px 500px 200px 50%;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border-style: dashed;
+}
+.mm {
+  position: relative;
+}
+.bonbon {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+#rouge  {
+  background-color: red;
+}
+#vert  {
+  background-color: green;
+}
+#jaune  {
+  background-color: yellow;
+}
+#bleu  {
+  background-color: blue;
+}
+#orange  {
+  background-color: orange;
+}
+#marron  {
+  background-color: brown;
+}
+#pack {
+  position:fixed;
+  margin-left: 35%;
+  margin-top: -550px;
+}

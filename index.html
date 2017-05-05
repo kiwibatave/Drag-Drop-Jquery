@@ -4,10 +4,44 @@
         <meta charset="utf-8">
         <title>index</title>
         <link rel="stylesheet" href="style.css">
+        <script src="jquery.js"></script>
+        <script src="jquery-ui.min.js"></script>
     </head>
 
     <body>
+      <nav>
+        <button>Rejoue FDP !!!</button>
+      </nav>
+          <div class="mm">
+            <p class="bonbon" id="rouge"><b>m</b></p>
+            <p class="bonbon" id="vert"><b>m</b></p>
+            <p class="bonbon" id="jaune"><b>m</b></p>
+            <p class="bonbon" id="bleu"><b>m</b></p>
+            <p class="bonbon" id="orange"><b>m</b></p>
+            <p class="bonbon" id="marron"><b>m</b></p>
+          </div>
+      <script>
+        $(document).ready(function() {
+          $(".mm p").draggable();
 
+        var number = $(".bonbon").length;
+        var tt = 0;
 
+          $("#pack").droppable({
+
+            drop: function (){
+              tt++;
+            if (tt == number) {
+              alert("Tous les m&ms sont dans le paquet!!!")
+              }
+            else {
+              alert("Encore un effort!!");
+            }
+          }
+      });
+        });
+      </script>
+
+        <img id="pack" src="paquet.png">
     </body>
 </html>
